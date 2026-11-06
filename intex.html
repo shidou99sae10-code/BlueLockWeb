@@ -133,6 +133,25 @@
                 </div>
             </div>
         </section>
+    </main>
+
+    <script>
+        function filterPlayers(category) {
+            const cards = document.querySelectorAll('.player-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
