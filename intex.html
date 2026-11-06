@@ -20,6 +20,32 @@
             <a href="#equipos">Equipos</a>
                 </nav>
     </header>
+     <main class="container">
+
+        <section id="jugadores" class="section">
+            <h2>Galería de Jugadores</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterPlayers('all')">Todos (30)</button>
+                <button class="filter-btn" onclick="filterPlayers('delantero')">Delanteros (10)</button>
+                <button class="filter-btn" onclick="filterPlayers('mediocampista')">Mediocampistas (10)</button>
+                <button class="filter-btn" onclick="filterPlayers('defensa')">Defensas (8)</button>
+                <button class="filter-btn" onclick="filterPlayers('portero')">Porteros (2)</button>
+            </div>
+
+            <div class="players-grid" id="playersGrid">
+                <div class="player-card" data-category="delantero"><img src="imagenes/isagi.jpg" alt="Jugador"><h3>Isagi Yoichi</h3><p>Delantero</p></div>
+                <div class="player-card" data-category="delantero"><img src="imagenes/Rin.jpg" alt="Jugador"><h3>Rin Itoshi</h3><p>Delantero</p></div>
+                <div class="player-card" data-category="delantero"><img src="imagenes/shidou.jpg" alt="Jugador"><h3>Shidou Ryusei</h3><p>Delantero</p></div>
+                <div class="player-card" data-category="delantero"><img src="imagenes/kaiser.jpg" alt="Jugador"><h3>Michael Kaiser</h3><p>Delantero</p></div>
+                <div class="player-card" data-category="delantero"><img src="imagenes/loki.jpg" alt="Jugador"><h3>Julian Loki</h3><p>Delantero</p></div>
+                <div class="player-card" data-category="delantero"><img src="imagenes/nagi.jpg" alt="Jugador"><h3>Seishiro Nagi</h3><p>Delantero</p></div>
+                <div class="player-card" data-category="delantero"><img src="imagenes/chigiri.jpg" alt="Jugador"><h3>Hyoma Chigiri</h3><p>Delantero</p></div>
+                <div class="player-card" data-category="delantero"><img src="imagenes/barou.jpg" alt="Jugador"><h3>Shouei Barou</h3><p>Delantero</p></div>
+                <div class="player-card" data-category="delantero"><img src="imagenes/teddy.jpg" alt="Jugador"><h3>Teddy Knight</h3><p>Delantero</p></div>
+                <div class="player-card" data-category="delantero"><img src="imagenes/lockharth.jpg" alt="Jugador"><h3>Lockharth</h3><p>Delantero</p></div>
+         </section>
+     </main>
 </body>
 
 </html>
